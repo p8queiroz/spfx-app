@@ -6,9 +6,13 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "package": "gulp bundle --ship && gulp package-solution --ship",
     "build": "gulp bundle",
     "clean": "gulp clean",
-    "test": "gulp test"
+    "test": "gulp test",
+    "package:ringdevelopment": "\"set NODE_ENV=ringdevelopment\"&& npm run package",
+    "package:ringtest": "\"set NODE_ENV=ringtest\"&& npm run package",
+    "package:ringproduction": "\"set NODE_ENV=ringproduction\"&& npm run package"
   },
   "dependencies": {
     "react": "16.7.0",
