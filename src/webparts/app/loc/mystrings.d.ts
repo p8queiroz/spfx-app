@@ -1,10 +1,10 @@
-declare interface IMainWebPartStrings {
+declare interface IAppWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
 }
 
-declare module 'MainWebPartStrings' {
-  const strings: IMainWebPartStrings;
+declare module 'AppWebPartStrings' {
+  const strings: IAppWebPartStrings;
   export = strings;
 }

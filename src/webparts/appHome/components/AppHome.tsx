@@ -1,12 +1,12 @@
 import * as React from 'react';
-import styles from './Main.module.scss';
-import { IMainProps } from './IMainProps';
+import styles from './AppHome.module.scss';
+import { IAppHomeProps } from './IAppHomeProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-export default class Main extends React.Component<IMainProps, {}> {
-  public render(): React.ReactElement<IMainProps> {
+export default class AppHome extends React.Component<IAppHomeProps, {}> {
+  public render(): React.ReactElement<IAppHomeProps> {
     return (
-      <div className={ styles.main }>
+      <div className={ styles.appHome }>
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
